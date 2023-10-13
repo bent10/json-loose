@@ -70,9 +70,14 @@ export default function jsonLoose(
   input: string,
   context: { [key: string]: unknown } = {}
 ): string {
+  const trimedInput = input.trim().replace(/[\,]+$/, '')
+
+  if (trimedInput === '') return '{}'
+  if (!isValid(trimedInput)) throw new TypeError('Unexpected input format')
+
   let acc = ''
 
-  lexer.reset(input)
+  lexer.reset(trimedInput)
 
   for (const token of lexer) {
     // ignore spaces
@@ -98,5 +103,12 @@ export default function jsonLoose(
     acc += token.value
   }
 
-  return acc ? acc.replace(/\,([\}\]])|\,$/g, '$1') : '{}'
+  return acc.replace(/\,([\}\]])/g, '$1')
+}
+
+function isValid(str: string) {
+  return (
+    (str.startsWith('{') && str.endsWith('}')) ||
+    (str.startsWith('[') && str.endsWith(']'))
+  )
 }

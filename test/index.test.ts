@@ -94,7 +94,7 @@ it('should throw an error on rest identifiers', () => {
 })
 
 it('should throw an error on malformed input', () => {
-  const result = jsonLoose('{ key: "value" ')
-  expect(result).toEqual('{"key":"value"')
-  expect(() => JSON.parse(result)).toThrowError(/Unexpected end of JSON input/)
+  expect(() => jsonLoose('{ key: "value" ')).toThrowError(
+    /Unexpected input format/
+  )
 })
