@@ -12,12 +12,13 @@ npm i json-loose
 yarn add json-loose
 ```
 
-You can also include this module directly in your HTML file from [CDN files](https://www.jsdelivr.com/package/npm/json-loose?tab=files&path=dist):
+Alternatively, you can also include this module directly in your HTML file from [CDN](https://www.jsdelivr.com/package/npm/json-loose?tab=files&path=dist):
 
-| Type | URL                                                              |
-| :--- | :--------------------------------------------------------------- |
-| ESM  | `https://cdn.jsdelivr.net/npm/json-loose/+esm`                   |
-| UMD  | `https://cdn.jsdelivr.net/npm/json-loose/dist/index.umd.min.cjs` |
+```html
+<script type="module">
+  import jsonLoose from 'https://cdn.jsdelivr.net/npm/json-loose/+esm'
+</script>
+```
 
 ## Usage
 
