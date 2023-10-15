@@ -10,8 +10,9 @@
   <body>
     <h1>Open your browser console to see the result!</h1>
 
-    <script src="./dist/index.umd.cjs"></script>
-    <script>
+    <script type="module">
+      import jsonLoose from "https://cdn.jsdelivr.net/npm/json-loose/+esm"
+
       const input = `[
         "foo",
         true,
