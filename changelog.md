@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/bent10/json-loose/compare/v1.2.0...v1.2.1) (2023-10-15)
+
+
+### Bug Fixes
+
+* tweaks ([b67e507](https://github.com/bent10/json-loose/commit/b67e50762041d7ed2a7461aa8548483efa4877eb))
+
 # [1.2.0](https://github.com/bent10/json-loose/compare/v1.1.0...v1.2.0) (2023-10-15)
 
 
