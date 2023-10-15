@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/bent10/json-loose/compare/v1.1.0...v1.2.0) (2023-10-15)
+
+
+### Features
+
+* implement build for the `esm`, `cjs`, and `umd` formats ([1449e3b](https://github.com/bent10/json-loose/commit/1449e3b8c6c7d85959a1404ad86e5d8a786d3422))
+
 # [1.1.0](https://github.com/bent10/json-loose/compare/v1.0.0...v1.1.0) (2023-10-13)
 
 
