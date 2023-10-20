@@ -12,7 +12,10 @@ export default defineConfig({
     },
     rollupOptions: {
       external: ['moo'],
-      output: { globals: { moo: 'moo' } }
+      output: {
+        globals: { moo: 'moo' },
+        entryFileNames: '[name].[format].js'
+      }
     }
   },
   test: {
