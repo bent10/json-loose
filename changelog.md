@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/bent10/json-loose/compare/v1.2.1...v1.2.2) (2023-10-20)
+
+
+### Bug Fixes
+
+* **build:** resolves `umd` mime issue ([6a3e632](https://github.com/bent10/json-loose/commit/6a3e632eb73128ee53cba9fe7f5f665a7777dd6f))
+
 ## [1.2.1](https://github.com/bent10/json-loose/compare/v1.2.0...v1.2.1) (2023-10-15)
 
 
