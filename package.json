@@ -48,7 +48,7 @@
     "moo": "^0.5.2"
   },
   "devDependencies": {
-    "@types/moo": "0.5.8",
+    "@types/moo": "0.5.9",
     "doogu": "3.2.7"
   },
   "config": {
