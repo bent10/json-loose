@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/bent10/json-loose/compare/v1.2.2...v1.2.3) (2023-12-10)
+
+
+### Bug Fixes
+
+* renames `index.cjs.js` to `index.cjs` ([50ae08b](https://github.com/bent10/json-loose/commit/50ae08bc492e9a210754951e4768d10525f8adb0)), closes [#7](https://github.com/bent10/json-loose/issues/7)
+
 ## [1.2.2](https://github.com/bent10/json-loose/compare/v1.2.1...v1.2.2) (2023-10-20)
 
 
