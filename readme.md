@@ -17,7 +17,7 @@ Alternatively, you can also include this module directly in your HTML file from 
 | Type | URL                                                         |
 | :--- | :---------------------------------------------------------- |
 | ESM  | `https://cdn.jsdelivr.net/npm/json-loose/+esm`              |
-| CJS  | `https://cdn.jsdelivr.net/npm/json-loose/dist/index.cjs.js` |
+| CJS  | `https://cdn.jsdelivr.net/npm/json-loose/dist/index.cjs`    |
 | UMD  | `https://cdn.jsdelivr.net/npm/json-loose/dist/index.umd.js` |
 
 ## Usage

@@ -1,8 +1,10 @@
 /// <reference types="vitest" />
 import { resolve } from 'node:path'
 import { defineConfig } from 'vite'
+import umdFormatResolver from 'vite-plugin-resolve-umd-format'
 
 export default defineConfig({
+  plugins: [umdFormatResolver()],
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
@@ -12,10 +14,7 @@ export default defineConfig({
     },
     rollupOptions: {
       external: ['moo'],
-      output: {
-        globals: { moo: 'moo' },
-        entryFileNames: '[name].[format].js'
-      }
+      output: { globals: { moo: 'moo' } }
     }
   },
   test: {
