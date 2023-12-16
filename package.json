@@ -49,7 +49,7 @@
   },
   "devDependencies": {
     "@types/moo": "0.5.9",
-    "doogu": "3.2.8",
+    "doogu": "3.2.9",
     "vite-plugin-resolve-umd-format": "1.0.0"
   },
   "config": {
