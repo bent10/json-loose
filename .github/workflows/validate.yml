@@ -18,7 +18,7 @@ jobs:
       fail-fast: false
       matrix:
         node-version:
-          - 18 # required by vite
+          - 18.17.0 # required by vite
         os:
           - ubuntu-latest
           - windows-latest
