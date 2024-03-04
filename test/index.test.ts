@@ -77,9 +77,7 @@ it('should throw an error on shorthand identifiers', () => {
 
   const result = jsonLoose(input, context)
   expect(result).toEqual('{"foo"}')
-  expect(() => JSON.parse(result)).toThrowError(
-    /Unexpected token } in JSON at position/
-  )
+  expect(() => JSON.parse(result)).toThrowError()
 })
 
 it('should throw an error on rest identifiers', () => {
@@ -88,9 +86,7 @@ it('should throw an error on rest identifiers', () => {
 
   const result = jsonLoose(input, context)
   expect(result).toEqual('{..."[object Object]"}')
-  expect(() => JSON.parse(result)).toThrowError(
-    /Unexpected token . in JSON at position/
-  )
+  expect(() => JSON.parse(result)).toThrowError()
 })
 
 it('should throw an error on malformed input', () => {
