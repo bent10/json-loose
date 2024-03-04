@@ -115,15 +115,6 @@ Yields:
 ## Related
 
 - [attributes-parser](https://github.com/bent10/attributes-parser) – A utility for parsing and tokenizing attributes string into meaningful tokens and key-value pairs.
-- [js-tokens](https://www.npmjs.com/package/js-tokens) – A JavaScript tokenizer that never fails.
-
-## Benchmarks
-
-```bash
-  name                hz     min      max    mean     p75     p99    p995    p999      rme  samples
-· json-loose  109,620.27  0.0077   0.7080  0.0091  0.0083  0.0168  0.0363  0.2052   ±1.19%    54811   fastest
-· js-tokens    54,156.77  0.0116  24.3425  0.0185  0.0122  0.0247  0.0643  1.1352  ±15.68%    27267
-```
 
 ## Contributing
 
