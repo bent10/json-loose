@@ -1,6 +1,6 @@
 # json-loose
 
-A utility to handle and transform loosely structured data into valid JSON strings. It offers an intuitive solution to ensure data consistency and compatibility, providing a safer alternative to using the `Function` constructor to obtain an object from a string.
+A utility that converts loosely structured data into valid JSON strings, ensuring data consistency and compatibility. It provides a safer alternative to using the `Function` constructor to create objects from strings.
 
 ## Install
 

@@ -26,7 +26,7 @@ const lexer = moo.compile({
    * characters.
    */
   Punctuator:
-    /--|\+\+|=>|\.{3}|\??\.(?!\d)|(?:&&|\|\||\?\?|[+\-%&|^]|\*{1,2}|<{1,2}|>{1,3}|!=?|={1,2}|\/(?![\/*]))=?|[?~,:;[\](){}]/u,
+    /--|\+\+|=>|\.{3}|\??\.(?!\d)|(?:&&|\|\||\?\?|[+\-%&|^]|\*{1,2}|<{1,2}|>{1,3}|!=?|={1,2}|\/(?![/*]))=?|[?~,:;[\](){}]/u,
 
   /**
    * Matches boolean literals, allowing for optional single or double quotes.
@@ -70,7 +70,7 @@ export default function jsonLoose(
   input: string,
   context: { [key: string]: unknown } = {}
 ): string {
-  const trimedInput = input.trim().replace(/[\,]+$/, '')
+  const trimedInput = input.trim().replace(/[,]+$/, '')
 
   if (trimedInput === '') return '{}'
   if (!isValid(trimedInput)) throw new TypeError('Unexpected input format')
@@ -103,7 +103,7 @@ export default function jsonLoose(
     acc += token.value
   }
 
-  return acc.replace(/\,([\}\]])/g, '$1')
+  return acc.replace(/,([}\]])/g, '$1')
 }
 
 function isValid(str: string) {

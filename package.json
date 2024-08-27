@@ -49,7 +49,7 @@
   },
   "devDependencies": {
     "@types/moo": "0.5.9",
-    "doogu": "3.2.13",
+    "doogu": "4.0.3",
     "vite-plugin-resolve-umd-format": "1.0.0"
   },
   "config": {
@@ -57,10 +57,7 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "eslintConfig": {
-    "extends": "./node_modules/doogu/eslint"
-  },
-  "prettier": "doogu/prettier.json",
+  "prettier": "doogu/prettier.config.js",
   "release": {
     "extends": "doogu/release.config.js"
   }
