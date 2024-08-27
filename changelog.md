@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/bent10/json-loose/compare/v1.2.3...v1.2.4) (2024-08-27)
+
+
+### Bug Fixes
+
+* **deps:** update `doogu` to `v4.0.3` ([2cc58a5](https://github.com/bent10/json-loose/commit/2cc58a5d3c2306c2c969a791f04dbcf9c1dfb994))
+
 ## [1.2.3](https://github.com/bent10/json-loose/compare/v1.2.2...v1.2.3) (2023-12-10)
 
 
